@@ -465,7 +465,7 @@ h2 {
     padding: 1rem 2rem;
 }
 .stepwizard .calculatescorecntnt {
-    ma-width: 102.4rem;
+    max-width: 102.4rem;
 }
 .stepwizard .calculatescorecntnt h2 {
     max-width: 80rem;
@@ -817,5 +817,8 @@ h6 {
     }
     .calculatemainstart {
         height: 80vh;
+    }
+    .itemgrp .item label strong {
+        line-height: 1.4;
     }
 }
