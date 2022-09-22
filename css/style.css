@@ -767,6 +767,10 @@ h6 {
     .togglemenu span {
         font-size: 1.8rem;
     }
+    .itemgrp .item label strong {
+        line-height: 1.4;
+        text-align: left;
+    }
 }
 
 @media(max-width:  500px) {
@@ -820,5 +824,6 @@ h6 {
     }
     .itemgrp .item label strong {
         line-height: 1.4;
+        text-align: left;
     }
 }
