@@ -318,7 +318,7 @@ p {
     color: #121316;
 }
 .calculatescorecntnt {
-    width: 66rem;
+    max-width: 66rem;
     margin: 0 auto;
 }
 .btn {
@@ -465,10 +465,10 @@ h2 {
     padding: 1rem 2rem;
 }
 .stepwizard .calculatescorecntnt {
-    width: 102.4rem;
+    ma-width: 102.4rem;
 }
 .stepwizard .calculatescorecntnt h2 {
-    width: 80rem;
+    max-width: 80rem;
     margin: 0 auto;
 }
 .itemgrp {
@@ -526,7 +526,7 @@ h2 {
     margin: 0;
 }
 .calculatescorecntnt .progress .icon {
-    width: 24rem;
+    max-width: 24rem;
     margin: 0 auto;
 }
 .calculatescorecntnt .progress .icon img {
@@ -670,7 +670,7 @@ h6 {
 }
 .scoreboard svg {
     margin-bottom: -25rem;
-    width: 60rem;
+    max-width: 60rem;
 }
 @media(max-width:  1900px) {
     .itemgrp .item label span {
@@ -708,5 +708,110 @@ h6 {
 @media(max-width:  1280px) {
     html {
         font-size: 46%;
+    }
+}
+@media(max-width:  1025px) {
+    html {
+        font-size: 40%;
+    }
+}
+@media(max-width:  800px) {
+    html {
+        font-size: 54%;
+    }
+    .calculatebg {
+        background-size: 103% 50% !important;
+    }
+    .itemgrp .item {
+        width: 100%;
+    }
+    .itemgrp .item label {
+        display: flex;
+        align-items: center;
+    }
+    .itemgrp .item label span {
+        border-radius: 8px;
+        width: 11.6rem;
+        height: 11.6rem;
+    }
+    .itemgrp .item label strong {
+        border-radius: 8px;
+        font-size: 2.4rem;
+    }
+    .calculatescore, .calculatebg {
+        height: auto;
+    }
+    .questions {
+        display: none;
+    }
+    .backprev svg {
+        width: 25px;
+        height: 25px;
+    }
+    .sitefooter {
+        position: relative;
+        bottom: -7rem !important;
+    } 
+    .sitefooter .container {
+        padding-top: 0;
+    }
+    .calculatebg {
+        padding-bottom: 13rem;
+    }
+    .desktopmenu {
+        display: none;
+    }
+    .togglemenu {
+        display: block !important;
+    }
+    .togglemenu span {
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:  500px) {
+    html {
+        font-size: 40%;
+    }
+    .calculatescorecntnt {
+        padding: 1.6rem;
+    }
+    .siteheader .logo {
+        width: 13.6rem;
+    }
+    .siteheader .logo img {
+        width: 100%;
+    }
+    .itemgrp .item label span {
+        width: 9.6rem;
+        height: 9.6rem;
+    }
+    .backprev svg {
+        width: 15px;
+        height: 15px;
+    }
+    .scoreboard svg {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+    .appdownload .appdownloadplatform a.applist {
+        width: 40%;
+    }
+    .appdownloadplatform {
+        display: flex;
+        justify-content: center;
+    }
+    .appdownload .appdownloadplatform a.applist img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .scoreboardcntnt {
+        padding: 0 2rem;
+    }
+    .calculatescoreboard .scorecalculateboard {
+        padding: 3rem 0 12rem;
+        height: auto;
     }
 }
