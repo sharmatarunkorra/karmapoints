@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Karma Points</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="siteheader">
+		<div class="container">
+			<div class="row justify-content-space aligncenter">
+				<div class="col-3">
+					<nav>
+						<ul class="row">
+							<li class="list-item"><a href="">Home</a></li>
+							<li class="list-item"><a href="">Charities</a></li>
+							<li class="list-item"><a href="">Influencers</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-4">
+					<div class="logo">
+						<a href=""><img src="img/logo.png" alt="logo"></a>
+					</div>
+				</div>
+				<div class="col-3">
+					<nav>
+						<ul class="row">
+							<li class="list-item"><a href="">Contribute Now</a></li>
+							<li class="list-item"><a href="">Brands</a></li>
+							<li class="list-item"><a href="">More</a></li>
+						</ul>
+					</nav>					
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="calculatescoreboard pd-auto">
+		<div class="scorecalculateboard">
+			<div class="container">
+				<div class="scoreboardcntnt">
+					<div class="scoreboard">
+						<svg width="624" height="312" viewBox="0 0 624 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M614.64 312C619.809 312 624.015 307.807 623.86 302.64C621.48 223.288 588.919 147.684 532.617 91.3827C474.106 32.8713 394.748 6.24727e-06 312 0C229.252 -6.24726e-06 149.894 32.8713 91.3827 91.3827C35.0812 147.684 2.51959 223.288 0.140281 302.64C-0.0146498 307.807 4.19062 312 9.36 312C14.5294 312 18.7044 307.806 18.8692 302.64C21.2422 228.254 51.8292 157.41 104.62 104.62C159.62 49.619 234.217 18.72 312 18.72C389.783 18.72 464.38 49.6191 519.38 104.62C572.171 157.41 602.758 228.254 605.131 302.64C605.296 307.806 609.471 312 614.64 312Z" fill="url(#paint0_linear_437_21280)"></path>
+							<g filter="url(#filter0_d_437_21280)">
+							<circle cx="496" cy="70" r="20" fill="black"></circle>
+							<circle cx="496" cy="70" r="20" stroke="white" stroke-width="12"></circle>
+							</g>
+							<defs>
+							<filter id="filter0_d_437_21280" x="462" y="40" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+							<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+							<feOffset dy="4"></feOffset>
+							<feGaussianBlur stdDeviation="4"></feGaussianBlur>
+							<feComposite in2="hardAlpha" operator="out"></feComposite>
+							<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"></feColorMatrix>
+							<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_437_21280"></feBlend>
+							<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_437_21280" result="shape"></feBlend>
+							</filter>
+							<linearGradient id="paint0_linear_437_21280" x1="8.5" y1="312" x2="624" y2="312" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#49F1F1"></stop>
+							<stop offset="0.661458" stop-color="#24B101"></stop>
+							<stop offset="1" stop-color="#036112"></stop>
+							</linearGradient>
+							</defs>
+						</svg>
+						<h1>800 <span>Out of 1000</span></h1>
+						<p><span>✦</span>Excellent<span>✦</span></p>
+					</div>
+					<h2>Improve your Karma by <br>onating to charities!</h2>
+					<p>If you want to help people in need, visit us at the <a href="" class="pontsserm">Karma Points website.</a></p>
+					<div class="appdownload">
+						<h6>You can also download our app</h6>
+						<div class="appdownloadplatform">
+							<a href="" class="applist"><img src="img/apple.png" alt="apple"></a>
+							<a href="" class="applist"><img src="img/android.png" alt="apple"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sitefooter">	
+				<div class="container">
+					<div class="row">
+						<div class="copyright">	
+							<p>Powered by <img src="img/logo.png" alt="logo"></p>
+						</div>	
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>		
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script>
+  	$('.radiodesign').on('change', function(){
+  		var step = $(this).closest('.stepwizard');
+  		$(this).closest('.stepwizard').hide();
+  		$(this).closest('.stepwizard').next().show();
+  		if($(this).closest('.stepwizard').next().hasClass('calculatescoreprogress')) {
+  			setTimeout(function(){
+  				$(step).next('.calculatescoreprogress').hide();
+  				$(step).next().next('.customerdetailstep').show();
+  				console.log(step.html());
+  			}, 1500)
+  		};
+  	})
+  </script>
+  <script>
+  	$('.backprev').on('click', function(){
+  		$(this).closest('.stepwizard').hide();
+  		$(this).closest('.stepwizard').prev().show();
+  	})
+  </script>
+</body>
+</html>
