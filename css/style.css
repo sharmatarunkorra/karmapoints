@@ -815,4 +815,7 @@ h6 {
         padding: 3rem 0 12rem;
         height: auto;
     }
+    .calculatemainstart {
+        height: 100vh;
+    }
 }
