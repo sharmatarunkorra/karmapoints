@@ -785,6 +785,7 @@ h6 {
     .itemgrp .item label span {
         width: 9.6rem;
         height: 9.6rem;
+        font-size: 3rem;
     }
     .backprev svg {
         width: 15px;
