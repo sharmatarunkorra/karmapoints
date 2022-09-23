@@ -645,6 +645,7 @@ h6 {
     visibility: hidden;
     opacity: 0;
     transition: 0.56s all ease-in-out;
+    display: none;
 }
 .scoreboardcntnt .scoreboard p {
     font-family: 'Inter';
@@ -790,6 +791,7 @@ h6 {
     .mobilemenu.active {
         opacity: 1;
         visibility: visible;
+        display: block;
     }
     .mobilemenu .close {
         position: absolute;
