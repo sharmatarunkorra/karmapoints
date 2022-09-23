@@ -34,7 +34,14 @@
 						<a href=""><img src="img/logo.png" alt="logo"></a>
 					</div>
 				</div>
-				<div class="col-3 desktopmenu">
+				<div class="col-3">
+					<div class="togglemenu menutoggle" style="display: none;">
+						<span>
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.7292 8.39582L6.625 4.29166L10.7292 0.166656L14.8542 4.29166L10.7292 8.39582ZM0.166672 6.99999V1.16666H6V6.99999H0.166672ZM8 14.8333V8.99999H13.8333V14.8333H8ZM0.166672 14.8333V8.99999H6V14.8333H0.166672ZM1.41667 5.74999H4.75V2.41666H1.41667V5.74999ZM10.75 6.66666L13.1042 4.31249L10.75 1.95832L8.39584 4.31249L10.75 6.66666ZM9.25 13.5833H12.5833V10.25H9.25V13.5833ZM1.41667 13.5833H4.75V10.25H1.41667V13.5833Z" fill="#121316"/>
+							</svg>
+						</span>
+					</div>
 					<nav class="desktopmenu">
 						<ul class="row">
 							<li class="list-item"><a href="">Contribute Now</a></li>
@@ -42,6 +49,21 @@
 							<li class="list-item"><a href="">More</a></li>
 						</ul>
 					</nav>					
+				</div>
+			</div>
+		</div>
+		<div class="mobilemenu">
+			<div class="container">
+				<div class="close"> X</div>
+				<div class="navmenu">
+					<ul>						
+						<li class="list-item"><a href="">Home</a></li>
+						<li class="list-item"><a href="">Charities</a></li>
+						<li class="list-item"><a href="">Influencers</a></li>
+						<li class="list-item"><a href="">Contribute Now</a></li>
+						<li class="list-item"><a href="">Brands</a></li>
+						<li class="list-item"><a href="">More</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -90,5 +112,14 @@
 			</div>	
 		</div>
 	</div>	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script>
+		$(".togglemenu").click(function(){
+		  $(".mobilemenu").addClass("active");
+		});
+		$(".mobilemenu .close").click(function(){
+		  $(".mobilemenu").removeClass("active");
+		});
+	</script>
 </body>
 </html>
