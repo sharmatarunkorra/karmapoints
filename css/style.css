@@ -634,6 +634,18 @@ h6 {
     color: #4A4B52;
     display: block;
 }
+.mobilemenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.56s all ease-in-out;
+}
 .scoreboardcntnt .scoreboard p {
     font-family: 'Inter';
     font-style: normal;
@@ -774,18 +786,6 @@ h6 {
     }
     .menutoggle {
         display: none !important;
-    }
-    .mobilemenu {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        background: #fff;
-        z-index: 2;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.56s all ease-in-out;
     }
     .mobilemenu.active {
         opacity: 1;
