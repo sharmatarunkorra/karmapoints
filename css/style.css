@@ -763,6 +763,7 @@ h6 {
     }
     .togglemenu {
         display: block !important;
+        cursor: pointer;
     }
     .togglemenu span {
         font-size: 1.8rem;
@@ -770,6 +771,50 @@ h6 {
     .itemgrp .item label strong {
         line-height: 1.4;
         text-align: left;
+    }
+    .menutoggle {
+        display: none !important;
+    }
+    .mobilemenu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        z-index: 2;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.56s all ease-in-out;
+    }
+    .mobilemenu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .mobilemenu .close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2.2rem;
+        cursor: pointer;
+    }
+    .mobilemenu .container {
+        height: 100%;
+    }
+    .mobilemenu .navmenu {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+    }
+    .mobilemenu .navmenu ul li {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .mobilemenu .navmenu ul li a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #000;
     }
 }
 
@@ -825,5 +870,11 @@ h6 {
     .itemgrp .item label strong {
         line-height: 1.4;
         text-align: left;
+    }
+    .togglemenu {
+        display: none !important;
+    }
+    .menutoggle {
+        display: block !important;
     }
 }
