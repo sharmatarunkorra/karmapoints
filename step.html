@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Quicksand:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="stepoverflow">
 	<header class="siteheader">
 		<div class="container">
 			<div class="row justify-content-space">
@@ -68,6 +68,8 @@
 			</div>
 		</div>
 	</header>
+
+
 	<div class="calculatescore pd-auto">
 		<form action="score.html">
 			<div class="stepwizard calculatebg bluebg whitecolor">
@@ -526,25 +528,47 @@
 		</form>
 	</div>	
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-  	$('.radiodesign').on('change', function(){
-  		var step = $(this).closest('.stepwizard');
-  		$(this).closest('.stepwizard').hide();
-  		$(this).closest('.stepwizard').next().show();
-  		if($(this).closest('.stepwizard').next().hasClass('calculatescoreprogress')) {
-  			setTimeout(function(){
-  				$(step).next('.calculatescoreprogress').hide();
-  				$(step).next().next('.customerdetailstep').show();
-  				console.log(step.html());
-  			}, 1500)
-  		};
-  	})
+  	$(document).ready(function(){
+		if ($(window).width() > 800) {
+		  	$('.radiodesign').on('change', function(){
+		  		var step = $(this).closest('.stepwizard');
+		  		$(this).closest('.stepwizard').hide('fade');
+		  		$(this).closest('.stepwizard').next().show("slide", { direction: "right" }, 1000);
+		  		if($(this).closest('.stepwizard').next().hasClass('calculatescoreprogress')) {
+		  			setTimeout(function(){
+		  				$(step).next('.calculatescoreprogress').hide();
+		  				$(step).next().next('.customerdetailstep').show();
+		  				console.log(step.html());
+		  			}, 1800)
+		  		};
+		  	})
+	  	}
+	});
+  	$(document).ready(function(){
+		if ($(window).width() < 790) {
+		  	$('.radiodesign').on('change', function(){
+		  		var step = $(this).closest('.stepwizard');
+		  		$(this).closest('.stepwizard').hide();
+		  		$(this).closest('.stepwizard').next().show();
+		  		if($(this).closest('.stepwizard').next().hasClass('calculatescoreprogress')) {
+		  			setTimeout(function(){
+		  				$(step).next('.calculatescoreprogress').hide();
+		  				$(step).next().next('.customerdetailstep').show();
+		  				console.log(step.html());
+		  			}, 1000)
+		  		};
+		  	})
+	  	}
+	});
   </script>
   <script>
   	$('.backprev').on('click', function(){
-  		$(this).closest('.stepwizard').hide();
-  		$(this).closest('.stepwizard').prev().show();
+  		$(this).closest('.stepwizard').hide('fade');
+  		$(this).closest('.stepwizard').prev().show("slide", { direction: "left" }, 1000);
   	});
   	$(".togglemenu").click(function(){
 	  $(".mobilemenu").addClass("active");
