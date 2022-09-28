@@ -709,7 +709,7 @@ h6 {
         overflow: hidden;
     }
     .itemgrp .item .iteminnr:hover {
-        transform: scale(1.04);
+        transform: scale(1.08);
     }
 }
 @media(max-width:  1900px) {
