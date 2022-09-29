@@ -871,6 +871,9 @@ h6 {
     .itemgrp .item label span {
         font-size: 3rem;
     }
+    .stepoverflow .calculatescore {
+        height: calc(100vh - 6.4rem);
+    }
 }
 @media(max-width:  500px) {
     html {
