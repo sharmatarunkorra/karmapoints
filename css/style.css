@@ -960,4 +960,10 @@ h6 {
     .menutoggle {
         display: block !important;
     }
+    a.btn {
+        width: 100%;
+    }
+    .stepwizard .inlinerow {
+        padding: 4rem 2rem 0;
+    }
 }
