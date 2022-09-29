@@ -698,7 +698,7 @@ h6 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100% !important;
 }
 .calculatescore  form {
     height: 100%;
@@ -871,11 +871,12 @@ h6 {
     .itemgrp .item label span {
         font-size: 3rem;
     }
-    .stepoverflow .calculatescore {
-        height: calc(100vh - 6.4rem);
+    .calculatescore form {
+        height: 94rem !important;
+        margin-bottom: 8rem
     }
 }
-@media(max-width:  500px) {
+@media(max-width:  550px) {
     html {
         font-size: 40%;
     }
@@ -936,5 +937,9 @@ h6 {
     }
     .menutoggle {
         display: block !important;
+    }
+    .calculatescore form {
+        height: 126rem !important;
+        margin-bottom: 8rem;
     }
 }
