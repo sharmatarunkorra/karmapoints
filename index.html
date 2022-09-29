@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Quicksand:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="stepoverflow">
+<body>
 	<header class="siteheader">
 		<div class="container">
 			<div class="row justify-content-space">
@@ -68,547 +68,58 @@
 			</div>
 		</div>
 	</header>
-
-
 	<div class="calculatescore pd-auto">
-		<form action="" id="calculatorform">
-			<div class="stepwizard calculatebg whitecolor">
-				<div class="stepwizardinnr bluebg">
-					<div class="inlinerow">
-						<div class="backprev" onclick="history.back()">
-							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M7 13.6667L5.8125 12.5L10.4792 7.83337H0.333332V6.16671H10.4792L5.8125 1.50004L7 0.333374L13.6667 7.00004L7 13.6667Z" fill="white"/>
-							</svg>
-						</div>
-						<ul class="tablist multisteps-form__progress">
-							<li class="multisteps-form__progress-btn js-active">
-								<span>1</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>2</span>
-							</li>
-							<li class="multisteps-form__progress-btn">
-								<span>3</span>
-							</li>
-							<li class="multisteps-form__progress-btn">
-								<span>4</span>
-							</li>
-							<li class="multisteps-form__progress-btn last">
-								<span>5</span>
-							</li>
-							<li class="multisteps-form__progress-btn last">
-								<span>5</span>
-							</li>
-						</ul>
-						<div class="questions">
-							<p>1 out of <strong>5 Questions</strong></p>
-						</div>
-					</div>
-					<div class="container">
-						<div class="calculatescorecntnt">
-							<h2>Have you ever helped a classmate by letting them cheat?</h2>
-							<div class="itemgrp row">
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_1_group_1" type="radio" name="answer_group_1" value="Company" class="required valid radiodesign">
-										<label for="answer_1_group_1"><span>🙊</span><strong>Yes</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_2_group_2" type="radio" name="answer_group_1" value="Company" class="required valid radiodesign">
-										<label for="answer_2_group_2"><span>🙅‍♂️</span><strong>no</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_3_group_3" type="radio" name="answer_group_1" value="Company" class="required valid radiodesign">
-										<label for="answer_3_group_3"><span>🙈</span><strong>I needed cheating</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_4_group_4" type="radio" name="answer_group_1" value="Company" class="required valid radiodesign">
-										<label for="answer_4_group_4"><span>👋</span><strong>I got Caught</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_5_group_5" type="radio" name="answer_group_1" value="Company" class="required valid radiodesign">
-										<label for="answer_5_group_5"><span>🙃</span><strong>I don,t do it anymore</strong></label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="sitefooter whitecolor">	
-						<div class="container">
-							<div class="row">
-								<div class="copyright">	
-									<p>Powered by <img src="img/logo.png" alt="logo"></p>
-								</div>	
-							</div>
-						</div>	
-					</div>	
+		<div class="calculatebg calculatemainstart" style="background: url('img/karmalscore.png');">
+			<ul class="tablist multisteps-form__progress pdt-7">
+				<li class="multisteps-form__progress-btn js-active">
+					<span>1</span>
+				</li>
+				<li class="multisteps-form__progress-btn">
+					<span>2</span>
+				</li>
+				<li class="multisteps-form__progress-btn">
+					<span>3</span>
+				</li>
+				<li class="multisteps-form__progress-btn">
+					<span>4</span>
+				</li>
+				<li class="multisteps-form__progress-btn last">
+					<span>5</span>
+				</li>
+				<li class="multisteps-form__progress-btn last">
+					<span>5</span>
+				</li>
+			</ul>
+			<div class="container">
+				<div class="calculatescorecntnt">
+					<h1>Calculate your Karma score!</h1>
+					<p>Answer 5 quick questions and we will tell you where do you are on the Karma scale & if you need to improve it.</p>
+					<a href="step.html" class="btn">Calculate Now
+						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7 13.6667L5.8125 12.5L10.4792 7.83337H0.333332V6.16671H10.4792L5.8125 1.50004L7 0.333374L13.6667 7.00004L7 13.6667Z" fill="white"/>
+						</svg>
+					</a>
 				</div>
 			</div>
-			<div class="stepwizard calculatebg whitecolor" style="display: none;">
-				<div class="stepwizardinnr purplebg">
-					<div class="inlinerow">
-						<div class="backprev">
-							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M7 13.6667L5.8125 12.5L10.4792 7.83337H0.333332V6.16671H10.4792L5.8125 1.50004L7 0.333374L13.6667 7.00004L7 13.6667Z" fill="white"/>
-							</svg>
-						</div>
-						<ul class="tablist multisteps-form__progress">
-							<li class="multisteps-form__progress-btn js-active">
-								<span>1</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>2</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>3</span>
-							</li>
-							<li class="multisteps-form__progress-btn">
-								<span>4</span>
-							</li>
-							<li class="multisteps-form__progress-btn last">
-								<span>5</span>
-							</li>
-							<li class="multisteps-form__progress-btn last">
-								<span>5</span>
-							</li>
-						</ul>
-						<div class="questions">
-							<p>2 out of <strong>5 Questions</strong></p>
-						</div>
-					</div>
-					<div class="container">
-						<div class="calculatescorecntnt">
-							<h2>Have you ever stolen from anyone?</h2>
-							<div class="itemgrp row">
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_21_group_21" type="radio" name="answer_group_12" value="Company" class="required valid radiodesign">
-										<label for="answer_21_group_21"><span>👨‍👩‍👧</span><strong>Parents</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_22_group_22" type="radio" name="answer_group_12" value="Company" class="required valid radiodesign">
-										<label for="answer_22_group_22"><span>🏫</span><strong>School</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_23_group_23" type="radio" name="answer_group_12" value="Company" class="required valid radiodesign">
-										<label for="answer_23_group_23"><span>🧛‍♀️</span><strong>Friends</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_24_group_24" type="radio" name="answer_group_12" value="Company" class="required valid radiodesign">
-										<label for="answer_24_group_24"><span>🕵️</span><strong>Strangers</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_25_group_25" type="radio" name="answer_group_12" value="Company" class="required valid radiodesign">
-										<label for="answer_25_group_25"><span>🙅</span><strong>Never</strong></label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="sitefooter whitecolor">	
-						<div class="container">
-							<div class="row">
-								<div class="copyright">	
-									<p>Powered by <img src="img/logo.png" alt="logo"></p>
-								</div>	
-							</div>
+			<div class="sitefooter">	
+				<div class="container">
+					<div class="row">
+						<div class="copyright">	
+							<p>Powered by <img src="img/logo.png" alt="logo"></p>
 						</div>	
-					</div>	
-				</div>
-			</div>
-			<div class="stepwizard calculatebg whitecolor" style="display: none;">
-				<div class="stepwizardinnr greenbg">
-					<div class="inlinerow">
-						<div class="backprev">
-							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M7 13.6667L5.8125 12.5L10.4792 7.83337H0.333332V6.16671H10.4792L5.8125 1.50004L7 0.333374L13.6667 7.00004L7 13.6667Z" fill="white"/>
-							</svg>
-						</div>
-						<ul class="tablist multisteps-form__progress">
-							<li class="multisteps-form__progress-btn js-active">
-								<span>1</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>2</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>3</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>4</span>
-							</li>
-							<li class="multisteps-form__progress-btn last">
-								<span>5</span>
-							</li>
-							<li class="multisteps-form__progress-btn last">
-								<span>5</span>
-							</li>
-						</ul>
-						<div class="questions">
-							<p>3 out of <strong>5 Questions</strong></p>
-						</div>
 					</div>
-					<div class="container">
-						<div class="calculatescorecntnt">
-							<h2>Are you a pet owner?</h2>
-							<div class="itemgrp row">
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_11_group_11" type="radio" name="answer_group_11" value="Company" class="required valid radiodesign">
-										<label for="answer_11_group_11"><span>🥰</span><strong>Yes</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_12_group_12" type="radio" name="answer_group_11" value="Company" class="required valid radiodesign">
-										<label for="answer_12_group_12"><span>😔</span><strong>No</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_13_group_13" type="radio" name="answer_group_11" value="Company" class="required valid radiodesign">
-										<label for="answer_13_group_13"><span>🤔</span><strong>Used to be</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_14_group_14" type="radio" name="answer_group_11" value="Company" class="required valid radiodesign">
-										<label for="answer_14_group_14"><span>😐</span><strong>Part time</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_15_group_5" type="radio" name="answer_group_11" value="Company" class="required valid radiodesign">
-										<label for="answer_15_group_5"><span>👨‍👨‍👧</span><strong>Can we count children?</strong></label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="sitefooter whitecolor">	
-						<div class="container">
-							<div class="row">
-								<div class="copyright">	
-									<p>Powered by <img src="img/logo.png" alt="logo"></p>
-								</div>	
-							</div>
-						</div>	
-					</div>	
-				</div>
-			</div>
-			<div class="stepwizard calculatebg whitecolor" style="display: none;">
-				<div class="stepwizardinnr skybg">
-					<div class="inlinerow">
-						<div class="backprev">
-							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M7 13.6667L5.8125 12.5L10.4792 7.83337H0.333332V6.16671H10.4792L5.8125 1.50004L7 0.333374L13.6667 7.00004L7 13.6667Z" fill="white"/>
-							</svg>
-						</div>
-						<ul class="tablist multisteps-form__progress">
-							<li class="multisteps-form__progress-btn js-active">
-								<span>1</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>2</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>3</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>4</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>5</span>
-							</li>
-							<li class="multisteps-form__progress-btn last">
-								<span>5</span>
-							</li>
-						</ul>
-						<div class="questions">
-							<p>4 out of <strong>5 Questions</strong></p>
-						</div>
-					</div>
-					<div class="container">
-						<div class="calculatescorecntnt">
-							<h2>What would you do if you get a $1bn right now?</h2>
-							<div class="itemgrp row">
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_31_group_31" type="radio" name="answer_group_32" value="Company" class="required valid radiodesign">
-										<label for="answer_31_group_31"><span>🛍️</span><strong>100% Shopping</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_32_group_32" type="radio" name="answer_group_32" value="Company" class="required valid radiodesign">
-										<label for="answer_32_group_32"><span>🛍️📚</span><strong>100% Shopping</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_33_group_33" type="radio" name="answer_group_32" value="Company" class="required valid radiodesign">
-										<label for="answer_33_group_33"><span>🛒👵</span><strong>50% Charity 50% Shopping</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_34_group_34" type="radio" name="answer_group_32" value="Company" class="required valid radiodesign">
-										<label for="answer_34_group_34"><span>🧒👠</span><strong>10% Charity 90% Shopping</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_35_group_35" type="radio" name="answer_group_32" value="Company" class="required valid radiodesign">
-										<label for="answer_35_group_35"><span>🏫</span><strong>100% Charity</strong></label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="sitefooter whitecolor">	
-						<div class="container">
-							<div class="row">
-								<div class="copyright">	
-									<p>Powered by <img src="img/logo.png" alt="logo"></p>
-								</div>	
-							</div>
-						</div>	
-					</div>	
-				</div>
-			</div>
-			<div class="stepwizard calculatebg whitecolor" style="display: none;">
-				<div class="stepwizardinnr darkgreenbg">
-					<div class="inlinerow">
-						<div class="backprev">
-							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M7 13.6667L5.8125 12.5L10.4792 7.83337H0.333332V6.16671H10.4792L5.8125 1.50004L7 0.333374L13.6667 7.00004L7 13.6667Z" fill="white"/>
-							</svg>
-						</div>
-						<ul class="tablist multisteps-form__progress">
-							<li class="multisteps-form__progress-btn js-active">
-								<span>1</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>2</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>3</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>4</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>5</span>
-							</li>
-							<li class="multisteps-form__progress-btn js-active">
-								<span>5</span>
-							</li>
-						</ul>
-						<div class="questions">
-							<p>5 out of <strong>5 Questions</strong></p>
-						</div>
-					</div>
-					<div class="container">
-						<div class="calculatescorecntnt">
-							<h2>Have you ever intentionally hurt anyone?</h2>
-							<div class="itemgrp row">
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_41_group_41" type="radio" name="answer_group_41" value="Company" class="required valid radiodesign">
-										<label for="answer_41_group_41"><span>💪</span><strong>No</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_42_group_42" type="radio" name="answer_group_41" value="Company" class="required valid radiodesign">
-										<label for="answer_42_group_42"><span>🙊</span><strong>Yes</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_43_group_43" type="radio" name="answer_group_41" value="Company" class="required valid radiodesign">
-										<label for="answer_43_group_43"><span>🤪</span><strong>Multiple times</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_44_group_44" type="radio" name="answer_group_41" value="Company" class="required valid radiodesign">
-										<label for="answer_44_group_44"><span>😾</span><strong>They deserved it</strong></label>
-									</div>
-								</div>
-								<div class="item">
-									<div class="iteminnr">
-										<input id="answer_45_group_45" type="radio" name="answer_group_41" value="Company" class="required valid radiodesign">
-										<label for="answer_45_group_45"><span>🙈</span><strong>Not as mush as I would like</strong></label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="sitefooter whitecolor">	
-						<div class="container">
-							<div class="row">
-								<div class="copyright">	
-									<p>Powered by <img src="img/logo.png" alt="logo"></p>
-								</div>	
-							</div>
-						</div>	
-					</div>	
-				</div>
-			</div>
-			<div class="stepwizard calculatebg calculatescoreprogress" style="display: none;">
-				<div class="stepwizardinnr">
-					<div class="container">
-						<div class="calculatescorecntnt">
-							<div class="progress">
-								<div class="icon"><img src="img/animation.png" alt="Icon"></div>
-								<h6>We are calculating your score based on your answers!</h6>
-							</div>
-						</div>
-					</div>
-					<div class="sitefooter">	
-						<div class="container">
-							<div class="row">
-								<div class="copyright">	
-									<p>Powered by <img src="img/logo.png" alt="logo"></p>
-								</div>	
-							</div>
-						</div>	
-					</div>	
-				</div>
-			</div>
-			<div class="stepwizard calculatebg customerdetailstep" style="display: none;">
-				<div class="stepwizardinnr">
-					<div class="container">
-						<div class="calculatescorecntnt">
-							<h2>Your results are ready!</h2>
-							<div class="formcntnt">
-								<p>To get your results and what can you do to improve your Karma Score, <br>just enter your email id. </p>
-							</div>
-							<div class="filldetailsform">
-								<div class="input">
-									<input type="text" placeholder="" name="yourname" required>
-									<label for="">your name</label>
-								</div>
-								<div class="input">
-									<input type="text" placeholder="" name="email" required>
-									<label for="">email</label>
-								</div>
-								<div class="input">
-									<input type="tel" placeholder="" name="phonenumber"  max="5" required>
-									<label for="">phone number</label>
-								</div>
-								<button class="btn" id="submitButton">
-									Get your Score
-									<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<mask id="mask0_469_8336" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="20">
-									<rect x="0.5" width="20" height="20" fill="#D9D9D9"/>
-									</mask>
-									<g mask="url(#mask0_469_8336)">
-									<path d="M5.83366 15L4.66699 13.8333L12.667 5.83329H5.50033V4.16663H15.5003V14.1666H13.8337V6.99996L5.83366 15Z" fill="white"/>
-									</g>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="sitefooter">	
-						<div class="container">
-							<div class="row">
-								<div class="copyright">	
-									<p>Powered by <img src="img/logo.png" alt="logo"></p>
-								</div>	
-							</div>
-						</div>	
-					</div>	
-				</div>
-			</div>
-		</form>
+				</div>	
+			</div>	
+		</div>
 	</div>	
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  	$(document).ready(function(){
-		$('.radiodesign').on('change', function(){
-	  		var step = $(this).closest('.stepwizard');
-	  		$(this).closest('.stepwizard').hide('fade');
-	  		$(this).closest('.stepwizard').next().show("slide", { direction: "right" }, 1000);
-	  		if($(this).closest('.stepwizard').next().hasClass('calculatescoreprogress')) {
-	  			setTimeout(function(){
-	  				$(step).next('.calculatescoreprogress').hide();
-	  				$(step).next().next('.customerdetailstep').show();
-	  			}, 1800)
-	  		};
-	  	})
-	});
- //  	$(document).ready(function(){
-	// 	if ($(window).width() < 790) {
-	// 	  	$('.radiodesign').on('change', function(){
-	// 	  		var step = $(this).closest('.stepwizard');
-	// 	  		$(this).closest('.stepwizard').hide();
-	// 	  		$(this).closest('.stepwizard').next().show();
-	// 	  		if($(this).closest('.stepwizard').next().hasClass('calculatescoreprogress')) {
-	// 	  			setTimeout(function(){
-	// 	  				$(step).next('.calculatescoreprogress').hide();
-	// 	  				$(step).next().next('.customerdetailstep').show();
-	// 	  				console.log(step.html());
-	// 	  			}, 1000)
-	// 	  		};
-	// 	  	})
-	//   	}
-	// });
-  </script>
-  <script>
-  	$('.backprev').on('click', function(){
-  		$(this).closest('.stepwizard').hide('fade');
-  		$(this).closest('.stepwizard').prev().show("slide", { direction: "left" }, 1000);
-  	});
-  	$(".togglemenu").click(function(){
-	  $(".mobilemenu").addClass("active");
-	});
-  	$(".mobilemenu .close").click(function(){
-	  $(".mobilemenu").removeClass("active");
-	});
-	$("#calculatorform").submit(function(e) {
-	    e.preventDefault(); 
-	    var form = $(this);	    
-	    $.ajax({
-	        type: "POST",
-	        url: 'actionUrl',
-	        // Action url change 
-	        data: form.serialize(), 
-	        success: function(data)
-	        {
-		        alert(data); // show response from the php script.	
-		        // Get score from data
-            	const score = '600';
-            	window.open(`file:///D:/Tarun/os/karmapoints/score.html?score=${score}`);
-            	// url change         
-	        }, 
-            error: function(error) {
-            	alert(error);
-            }
-	    });
-	    
-	});
-  </script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script>
+		$(".togglemenu").click(function(){
+		  $(".mobilemenu").addClass("active");
+		});
+		$(".mobilemenu .close").click(function(){
+		  $(".mobilemenu").removeClass("active");
+		});
+	</script>
 </body>
 </html>
