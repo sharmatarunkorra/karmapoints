@@ -71,7 +71,7 @@
 
 
 	<div class="calculatescore pd-auto">
-		<form action="score.html">
+		<form action="" id="calculatorform">
 			<div class="stepwizard calculatebg bluebg whitecolor">
 				<div class="inlinerow">
 					<div class="backprev" onclick="history.back()">
@@ -178,7 +178,7 @@
 						</li>
 					</ul>
 					<div class="questions">
-						<p>2 out of 5 Questions</p>
+						<p>2 out of <strong>5 Questions</strong></p>
 					</div>
 				</div>
 				<div class="container">
@@ -256,7 +256,7 @@
 						</li>
 					</ul>
 					<div class="questions">
-						<p>3 out of 5 Questions</p>
+						<p>3 out of <strong>5 Questions</strong></p>
 					</div>
 				</div>
 				<div class="container">
@@ -334,7 +334,7 @@
 						</li>
 					</ul>
 					<div class="questions">
-						<p>4 out of 5 Questions</p>
+						<p>4 out of <strong>5 Questions</strong></p>
 					</div>
 				</div>
 				<div class="container">
@@ -412,7 +412,7 @@
 						</li>
 					</ul>
 					<div class="questions">
-						<p>5 out of 5 Questions</p>
+						<p>5 out of <strong>5 Questions</strong></p>
 					</div>
 				</div>
 				<div class="container">
@@ -501,7 +501,7 @@
 								<input type="tel" placeholder="" name="phonenumber"  max="5" required>
 								<label for="">phone number</label>
 							</div>
-							<button class="btn" type="submit">
+							<button class="btn" id="submitButton">
 								Get your Score
 								<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<mask id="mask0_469_8336" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="20">
@@ -533,37 +533,34 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   	$(document).ready(function(){
-		if ($(window).width() > 800) {
-		  	$('.radiodesign').on('change', function(){
-		  		var step = $(this).closest('.stepwizard');
-		  		$(this).closest('.stepwizard').hide('fade');
-		  		$(this).closest('.stepwizard').next().show("slide", { direction: "right" }, 1000);
-		  		if($(this).closest('.stepwizard').next().hasClass('calculatescoreprogress')) {
-		  			setTimeout(function(){
-		  				$(step).next('.calculatescoreprogress').hide();
-		  				$(step).next().next('.customerdetailstep').show();
-		  				console.log(step.html());
-		  			}, 1800)
-		  		};
-		  	})
-	  	}
+		$('.radiodesign').on('change', function(){
+	  		var step = $(this).closest('.stepwizard');
+	  		$(this).closest('.stepwizard').hide('fade');
+	  		$(this).closest('.stepwizard').next().show("slide", { direction: "right" }, 1000);
+	  		if($(this).closest('.stepwizard').next().hasClass('calculatescoreprogress')) {
+	  			setTimeout(function(){
+	  				$(step).next('.calculatescoreprogress').hide();
+	  				$(step).next().next('.customerdetailstep').show();
+	  			}, 1800)
+	  		};
+	  	})
 	});
-  	$(document).ready(function(){
-		if ($(window).width() < 790) {
-		  	$('.radiodesign').on('change', function(){
-		  		var step = $(this).closest('.stepwizard');
-		  		$(this).closest('.stepwizard').hide();
-		  		$(this).closest('.stepwizard').next().show();
-		  		if($(this).closest('.stepwizard').next().hasClass('calculatescoreprogress')) {
-		  			setTimeout(function(){
-		  				$(step).next('.calculatescoreprogress').hide();
-		  				$(step).next().next('.customerdetailstep').show();
-		  				console.log(step.html());
-		  			}, 1000)
-		  		};
-		  	})
-	  	}
-	});
+ //  	$(document).ready(function(){
+	// 	if ($(window).width() < 790) {
+	// 	  	$('.radiodesign').on('change', function(){
+	// 	  		var step = $(this).closest('.stepwizard');
+	// 	  		$(this).closest('.stepwizard').hide();
+	// 	  		$(this).closest('.stepwizard').next().show();
+	// 	  		if($(this).closest('.stepwizard').next().hasClass('calculatescoreprogress')) {
+	// 	  			setTimeout(function(){
+	// 	  				$(step).next('.calculatescoreprogress').hide();
+	// 	  				$(step).next().next('.customerdetailstep').show();
+	// 	  				console.log(step.html());
+	// 	  			}, 1000)
+	// 	  		};
+	// 	  	})
+	//   	}
+	// });
   </script>
   <script>
   	$('.backprev').on('click', function(){
@@ -575,6 +572,28 @@
 	});
   	$(".mobilemenu .close").click(function(){
 	  $(".mobilemenu").removeClass("active");
+	});
+	$("#calculatorform").submit(function(e) {
+	    e.preventDefault(); 
+	    var form = $(this);	    
+	    $.ajax({
+	        type: "POST",
+	        url: 'actionUrl',
+	        // Action url change 
+	        data: form.serialize(), 
+	        success: function(data)
+	        {
+		        alert(data); // show response from the php script.	
+		        // Get score from data
+            	const score = '600';
+            	window.open(`file:///D:/Tarun/os/karmapoints/score.html?score=${score}`);
+            	// url change         
+	        }, 
+            error: function(error) {
+            	alert(error);
+            }
+	    });
+	    
 	});
   </script>
 </body>
