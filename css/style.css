@@ -966,4 +966,10 @@ h6 {
     .stepwizard .inlinerow {
         padding: 4rem 2rem 0;
     }
+    .calculatemainstart ul.tablist.multisteps-form__progress li:first-child {
+        padding-left: 0;
+    }
+    .calculatemainstart ul.tablist.multisteps-form__progress {
+        margin: 0 auto;
+    }
 }
