@@ -972,4 +972,7 @@ h6 {
     .calculatemainstart ul.tablist.multisteps-form__progress {
         margin: 0 auto;
     }
+    .stepoverflow .calculatescore form .stepwizard {
+        padding-bottom: 2rem;
+    }
 }
