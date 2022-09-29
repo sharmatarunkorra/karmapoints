@@ -871,9 +871,6 @@ h6 {
     .itemgrp .item label span {
         font-size: 3rem;
     }
-    .calculatescore form {
-        margin-bottom: 55rem;
-    }
 }
 @media(max-width:  500px) {
     html {
