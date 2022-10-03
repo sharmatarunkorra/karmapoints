@@ -97,7 +97,7 @@
 							</linearGradient>
 							</defs>
 						</svg>
-						<h1>800 <span>Out of 1000</span></h1>
+						<h1><span id="scoreboard">800</span> <span>Out of 1000</span></h1>
 						<p><span>✦</span>Excellent<span>✦</span></p>
 					</div>
 					<h2>Improve your Karma by <br>onating to charities!</h2>
@@ -131,6 +131,11 @@
 		});
 		$(".mobilemenu .close").click(function(){
 		  $(".mobilemenu").removeClass("active");
+		});
+		$(document).ready(function(){
+			var urlParams = new URLSearchParams(window.location.search);
+			var score = urlParams.get('score');
+			$('#scoreboard').text(score);
 		});
 	</script>
 </body>
