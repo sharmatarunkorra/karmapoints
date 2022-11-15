@@ -511,7 +511,7 @@
 									<label for="">email</label>
 								</div>
 								<div class="input">
-									<input type="tel" placeholder="" name="phonenumber"  id="phone" max="5" required>
+									<input type="tel" placeholder="" name="phonenumber"  id="phone" min="1" max="10 required>
 									<label for="">phone number</label>
 								</div>
 								<button class="btn" id="submitButton" onclick="savedata()">
@@ -588,6 +588,12 @@
   	$(".mobilemenu .close").click(function(){
 	  $(".mobilemenu").removeClass("active");
 	});
+	var mailformat = /^\w+([\.-]?\w+)*[@gmail.com]*(\.\w{2,3})+$/;
+	var email_val = document.getElementById("email").value;
+	if(!email_val.match(mailformat)){
+	   document.getElementById("message1").innerHTML = "<em> please enter email dsfsdfa</em>";
+	   return false;
+	}
 	function savedata(){
 	var myHeaders = new Headers();
 	myHeaders.append("Content-Type", "application/json");
