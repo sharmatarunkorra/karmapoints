@@ -503,15 +503,15 @@
 							</div>
 							<div class="filldetailsform">
 								<div class="input">
-									<input type="text" placeholder="" name="yourname" id="yourname" required>
+									<input type="text" placeholder="" name="yourname" id="yourname" size="50"required>
 									<label for="">your name</label>
 								</div>
 								<div class="input">
-									<input type="text" placeholder="" id="email" name="email" required>
+									<input type="text" placeholder="" id="email" name="email"  pattern=".+@gmail\.com" size="30" required>
 									<label for="">email</label>
 								</div>
 								<div class="input">
-									<input type="tel" placeholder="" name="phonenumber"  id="phone" min="1" max="10 required>
+									<input type="tel" placeholder="" name="phonenumber"  id="phone" pattern="[7-9]{1}[0-9]{9}" onKeyPress="if(this.value.length==10) return false;" required>
 									<label for="">phone number</label>
 								</div>
 								<button class="btn" id="submitButton" onclick="savedata()">
@@ -588,12 +588,6 @@
   	$(".mobilemenu .close").click(function(){
 	  $(".mobilemenu").removeClass("active");
 	});
-	var mailformat = /^\w+([\.-]?\w+)*[@gmail.com]*(\.\w{2,3})+$/;
-	var email_val = document.getElementById("email").value;
-	if(!email_val.match(mailformat)){
-	   document.getElementById("message1").innerHTML = "<em> please enter email dsfsdfa</em>";
-	   return false;
-	}
 	function savedata(){
 	var myHeaders = new Headers();
 	myHeaders.append("Content-Type", "application/json");
@@ -641,7 +635,6 @@
 	    }
 	  ]
 	});
-	console.log(raw);
 	var requestOptions = {
 	  method: 'POST',
 	  headers: myHeaders,
@@ -653,7 +646,6 @@
 	  .then(response => response.text())
 	  .then(result => console.log(result))
 	  .catch(error => console.log('error', error));
-	  alert("submit");
 	}
 	function keepValue(arg,qno) {
 		if(qno == 1) {
