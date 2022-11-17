@@ -71,7 +71,7 @@
 
 
 	<div class="calculatescore pd-auto">
-		<form action="" id="calculatorform">
+		<div class="calculatorformsec" id="calculatorform">
 			<div class="stepwizard calculatebg whitecolor">
 				<div class="stepwizardinnr bluebg">
 					<div class="inlinerow">
@@ -539,7 +539,7 @@
 					</div>	
 				</div>
 			</div>
-		</form>
+		</div>
 	</div>	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -644,8 +644,13 @@
 
 	fetch("https://strapi.thekarmapoints.com/api/calculator-responses/", requestOptions)
 	  .then(response => response.text())
-	  .then(result => console.log(result))
+	  .then(result => showresult(result))
 	  .catch(error => console.log('error', error));
+	}
+	function showresult(arg){
+		var obj = JSON.parse(arg);
+		localStorage.setItem('score', obj.score );
+		window.location = "score.html";
 	}
 	function keepValue(arg,qno) {
 		if(qno == 1) {

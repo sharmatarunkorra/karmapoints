@@ -133,9 +133,10 @@
 		  $(".mobilemenu").removeClass("active");
 		});
 		$(document).ready(function(){
-			var urlParams = new URLSearchParams(window.location.search);
-			var score = urlParams.get('score');
-			$('#scoreboard').text(score);
+			var getscore = localStorage.getItem('score');
+			// var urlParams = new URLSearchParams(window.location.search);
+			// var score = urlParams.get('score');
+			$('#scoreboard').text(getscore);
 		});
 	</script>
 </body>
