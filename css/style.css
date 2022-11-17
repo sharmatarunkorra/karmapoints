@@ -704,7 +704,7 @@ h6 {
 .stepwizardinnr {
     height: 100%;
 }
-.calculatescore  form {
+.calculatescore  .calculatorformsec {
     height: 100%;
     position: relative;
 }
@@ -868,7 +868,7 @@ h6 {
     .itemgrp .item .iteminnr:hover {
         transform: scale(1.02);
     }
-    .stepoverflow .calculatescore form .stepwizard {
+    .stepoverflow .calculatescore .calculatorformsec .stepwizard {
         height: 100vh !important;
         overflow-y: scroll;
         padding-bottom: 10rem;
@@ -883,14 +883,14 @@ h6 {
         bottom: 0 !important;
         padding-top: 5rem;
     }
-    .stepoverflow .calculatescore form .stepwizard .stepwizardinnr {
+    .stepoverflow .calculatescore .calculatorformsec .stepwizard .stepwizardinnr {
         padding-bottom: 5rem;
     }
     .stepwizard.calculatebg {
         border: none;
         border-radius: 0;
     }
-    .stepoverflow .calculatescore form .stepwizard .stepwizardinnr {
+    .stepoverflow .calculatescore .calculatorformsec .stepwizard .stepwizardinnr {
         border: 1px solid rgba(0, 0, 0, 0.12);
         border-radius: 12px;
     }
@@ -972,7 +972,7 @@ h6 {
     .calculatemainstart ul.tablist.multisteps-form__progress {
         margin: 0 auto;
     }
-    .stepoverflow .calculatescore form .stepwizard {
+    .stepoverflow .calculatescore .calculatorformsec .stepwizard {
         padding-bottom: 20rem;
     }
 }
